@@ -1,32 +1,35 @@
-# listings-modelica
+# listings-flexpde
 
-This project provides syntax highlighting definitions of the [Modelica language](https://modelica.org) for the LaTeX [listings package](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/).
+This project provides syntax highlighting definitions of the FlexPDE language for the LaTeX [listings package](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/).
 
 ## Usage
 
-Copy or link the file `modelica-listings.cfg` into your LaTeX project and
+Copy or link the file `flexpde-listings.cfg` into your LaTeX project and
 include it in your main project file.
 
 E.g.:
 
     \usepackage{listings}
-    \input{listings-modelica.cfg}
+    \input{listings-flexpde.cfg}
 
-The modelica `modelica-listings.cfg` file also provides to new commands,
-`\code` and `\modelica`, in order to inline code examples without and with
-Modelica syntax highlighting, repsectively.
+The flexpde `flexpde-listings.cfg` file also provides to new commands,
+`\code` and `\flexpde`, in order to inline code examples without and with
+Flexpde syntax highlighting, respectively.
 
 By default no background colour is set for the listing.
 But the appearance can be modified for example by doing:
 
     \usepackage{listings}
-    \input{listings-modelica.cfg}
-    \lstset{language = modelica,
+    \input{listings-flexpde.cfg}
+    \lstset{language = flexpde,
             basicstyle=\fontsize{9pt}{10.5pt}\ttfamily,
             backgroundcolor = \color{green}}
 
 ## License
 
+&copy; Copyright 2024 Manuel (mgrojo@github.com)
+
+Based on previous work for the Modelica language by:
 &copy; Copyright 2014 Martin Sj&ouml;lund, Dietmar Winkler
 
 This work may be distributed and/or modified under the
